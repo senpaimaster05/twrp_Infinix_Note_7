@@ -77,10 +77,10 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Define Dynamic Partitions
 BOARD_SUPER_PARTITION_SIZE := 6106906624
 BOARD_SUPER_PARTITION_GROUPS := main
-BOARD_MAIN_PARTITIONS_SIZE := 6106906624
+BOARD_MAIN_SIZE := 6106906624
 BOARD_MAIN_PARTITION_LIST := \
      product \
-     system \ 
+     system \
      vendor
 
 # System as root
