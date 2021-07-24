@@ -29,6 +29,11 @@ $(call inherit-product, device/micromax/E6746/device.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := E6746
 PRODUCT_NAME := omni_E6746
