@@ -1,9 +1,9 @@
-# TWRP DEVICE TREE FOR MICROMAX E6746
+# UNIFIED TWRP DEVICE TREE
+## DEVICE
+- Micromax IN 1 (E6746)
+- Micromax IN Note 1 (E7746)
 
-## WORKING
-- Fastbootd
-- Decryption
-- MTP & ADB
-
-## bugs
-- Tell me
+## How To Build
+- . build/envsetup.sh
+- export ALLOW_MISSING_DEPENDENCIES=true
+- lunch omni_E6746-eng && mka recoveryimage
