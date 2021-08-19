@@ -41,12 +41,12 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock.recovery
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := E6746
-PRODUCT_NAME := omni_E6746
+PRODUCT_DEVICE := E7746
+PRODUCT_NAME := omni_E7746
 PRODUCT_BRAND := Micromax
 PRODUCT_MODEL := E6746
 PRODUCT_MANUFACTURER := micromax
-PRODUCT_RELEASE_NAME := Micromax IN 1
+PRODUCT_RELEASE_NAME := Micromax IN Note 1
 
 # Define Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
