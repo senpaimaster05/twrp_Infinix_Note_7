@@ -15,7 +15,7 @@ on:
 env:
   MANIFEST: https://github.com/SHRP/platform_manifest_twrp_omni -b v3_10.0
   DEVICE: E6746
-  DT_LINK: https://github.com/mastersenpai05/twrp_micromax_e6746 -b shrp-10.0
+  DT_LINK: https://github.com/mastersenpai05/twrp_micromax_E7746
   DT_PATH: device/micromax/E6746
   TARGET: recoveryimage
   TZ: Asia/manila
@@ -61,10 +61,11 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: shrp_10.0
-          name: UNOFFICIAL SHRP_10.0
+          tag_name: test_10.0
+          name: SHRP_10.0_test
           files: | 
             version=$(cat bootable/recovery/variables.h | grep "define TW_MAIN_VERSION_STR" | cut -d \" -f2)
             OUTFILE=TWRP-${version}-${DEVICE}-$(date "+%Y%m%d-%I%M").zip
-            work/out/target/product/E6746/recovery.img
             mv recovery.img ${OUTFILE%.zip}.img
+            work/out/target/product/E6746/*.zip
+       
