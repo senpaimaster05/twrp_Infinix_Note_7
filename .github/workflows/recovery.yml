@@ -14,9 +14,9 @@ on:
 
 env:
   MANIFEST: https://github.com/SHRP/platform_manifest_twrp_omni -b v3_10.0
-  DEVICE: E6746
+  DEVICE: E7746
   DT_LINK: https://github.com/mastersenpai05/twrp_micromax_E7746
-  DT_PATH: device/micromax/E6746
+  DT_PATH: device/micromax/E7746
   TARGET: recoveryimage
   TZ: Asia/manila
 
