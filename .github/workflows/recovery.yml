@@ -64,8 +64,5 @@ jobs:
           tag_name: test_10.0
           name: SHRP_10.0_test
           files: | 
-            version=$(cat bootable/recovery/variables.h | grep "define TW_MAIN_VERSION_STR" | cut -d \" -f2)
-            OUTFILE=TWRP-${version}-${DEVICE}-$(date "+%Y%m%d-%I%M").zip
-            mv recovery.img ${OUTFILE%.zip}.img
-            work/out/target/product/E6746/*.zip
+             work/out/target/product/E7746/*.zip
        
