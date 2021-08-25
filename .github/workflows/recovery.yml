@@ -61,8 +61,8 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: test_10.0
-          name: SHRP_10.0_test
+          tag_name: shrp_10.0
+          name: SHRP_10.0
           files: | 
              work/out/target/product/E7746/*.zip
        
